@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Upwork Page Reloader",
+  "version": "1.0",
+  "description": "Automatically reloads Upwork jobs page at random intervals",
+  "permissions": ["tabs", "alarms", "storage"],
+  "host_permissions": [
+    "https://www.upwork.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
